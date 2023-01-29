@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive portfolio website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+
+	<div class="hero-header">
+		<div class="wrapper">
+			<header>
+				<div class="logo">
+					<i class="fa-solid fa-p"></i>
+					<div class="logo-text">Prakash Khadka</div>
+					</div>
+				<nav>
+					<div class="togglebtn">
+						<span></span>
+						<span></span>
+						<span></span>
+			        </div>
+			        <ul class="navlinks">
+			        <li><a href="#">Home</a></li>
+			        <li><a href="#">Portfolio</a></li>
+			        <li><a href="#">Resume</a></li>
+			        <li><a href="#">Blog</a></li>
+			        <li><a href="#">Contact</a></li>	
+			        </ul>
+			    </nav>
+				
+			</header>
+			<div class="container">
+				<div class="hero-pic">
+					<img src="images/k.png" alt="profile pic">
+				</div>
+				<div class="hero-text">
+					<h5>Hi I'm <span class="input">Web Developer</span></h5>
+					<h1>Prakash Khadka</h1>
+					<p>A web developer with one years of experience. I specialize in c, c++, java, html, css, java script, php etc. I have experience in building portfolio website and news feeding website. I am passionate about creating user-friendly and efficient websites. It's great to meet you!"</p>
+					<div class="btn-group">
+						<a href="#" class="btn active">Download CV</a>
+						<a href="#" class="btn">Contact</a>
+					</div>
+					<div class="social">
+						<a href="https://www.facebook.com/iamblacklinux"><i class="fa-brands fa-facebook"></i></a>
+						<a href="https://www.tiktok.com/@eagle_guy69"><i class="fa-brands fa-tiktok"></i></a>
+						<a href="https://www.instagram.com/prakash.k00/"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.youtube.com/channel/UCLfFJvUOieICDa-oL-JMdBQ"><i class="fa-brands fa-youtube"></i></a>
+						<a href="https://twitter.com/prakash_khadka0"><i class="fa-brands fa-twitter"></i></a>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!----- typed js for typing text effect -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+	<script>
+		/** creating button click show hide navbar **/
+		var togglebtn=document.querySelector(".togglebtn");
+		var nav=document.querySelector(".navlinks");
+		var links=document.querySelector("navlinks li");
+
+		togglebtn.addEventListener("click", function(){
+			this.classlist.toggle("click");
+			nav.classlist.toggle("open");
+		})
+
+		
+		var typed=new Typed(".input",{
+			strings:["Web Developer","UX Designer","Web Developer"],
+			typedSpeed:70,
+		    backSpeed:55,
+		    loop:true})
+	</script>
+
+</body>
+</html>
